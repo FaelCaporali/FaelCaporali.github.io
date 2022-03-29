@@ -1,0 +1,20 @@
+.fundo {
+    background-color: black;
+}
+.texto {
+    color: yellow;
+    text-align: center;
+    font-size: 80px;
+}
+.textoen {
+    color: yellow;
+    text-align: left;
+}
+.textoen2 {
+    color: yellow;
+    text-align: center;
+}
+.textoen3 {
+    color: yellow;
+    text-align:right;
+}

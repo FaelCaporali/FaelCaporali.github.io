@@ -1,0 +1,55 @@
+body {
+    background-color: #353531;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 110%;
+
+}
+.area1 {
+    background-color: #000000;
+    padding:2px ;
+    text-align:center;
+    text-anchor: middle;
+    border-radius:50px;
+    line-height: normal;
+}
+.titulo{
+    color:#ec4e20;
+    line-height: 20%;
+    font-size: 2em;   
+}
+.subtitulo {
+    color: #FF9505;
+    font-size:1em;
+}
+.seshead {
+
+}
+.nav {
+
+}
+.txt {
+
+}
+.foot {
+
+}
+.ico{
+
+}
+.pic{
+
+}
+.ilinke {
+}
+a:link{
+    }
+a:visited{
+}  
+a:hover{
+    text-decoration:none;
+    color: #ff9505;
+}
+a:active{
+    text-decoration:none;
+    color:white;
+}
