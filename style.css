@@ -5,6 +5,8 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
   }
 
   header {
@@ -13,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: sticky;
     width: 100vw;
     height: 10vh;
     top:0;
@@ -22,6 +24,7 @@
 
   header h1 {
     padding-left: 4vw;
+    font-size: x-large;
   }
 
   .hidden-box {
@@ -46,9 +49,9 @@
     width: 80vw;
     background-color: aliceblue;
     color: black;
-    border-radius: 0;
-    top: 0;
-    right: 0;
+    border-radius: 10px;
+    top: 2vh;
+    right: -2vw;
   }
 
   .opened-box ul {
@@ -94,21 +97,20 @@
     transition: 0.4s;
   }
 
-  .change .bar1 {
+  /* .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-2vw, 1vh);
     transform: rotate(-45deg) translate(-2vw, 1vh);
-  }
+  } */
 
-  .change .bar2 {
+  /* .change .bar2 {
     opacity: 0;
   }
 
   .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-2vw, -1.2vh);
     transform: rotate(45deg) translate(-2vw, -1.2vh);
-  }
+  } */
   main {
-      margin-top: 10vh;
       padding: 2vw;
   }
   #caixa-conteudo {
@@ -119,25 +121,34 @@
       padding: 2vw;
   }
 
-  #profile-pic-box {
+  #hello-world {
       display: flex;
+      flex-flow: column nowrap;
+      text-align: center;
+      justify-content: space-around;
       align-items: center;
-      justify-content: center;
-      background-color: black;
+      background-image: url(./manutenção/v1/construction-1921518.jpg);
+      background-size: cover;
       border-radius: 40px;
+      height: 79vh;
+      color: aliceblue;
   }
 
   #perfil {
-      border-radius: 50% 30%;
+      border-radius: 50%;
       padding: 2vh;
   }
+  
   #linkedin-logo {
       width: 8vh;
       height: 8vh;
       border-radius: 50%;
-      position: relative;
-      top: -2vh;
-      left: 17vw;
+  }
+
+  #github-logo {
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
   }
 
   #page-greetings {
@@ -153,10 +164,21 @@
       align-items: center;
       list-style: none inside;
       padding: 2vw;
+      background-color: black;
+      border-radius: 20px;
+  }
+
+  #explain ul li {
+      background-color: dimgray;
+      color: black;
+      margin: 2vh;
+      border-radius: 20px;
+      padding: 2vw;
   }
 
   #explain ul li h2 {
       text-align: center;
+      margin-top: 0;
   }
 
   #explain ul li p {
@@ -180,10 +202,25 @@
       padding: 1vh;
       margin: .5vh;
       border-radius: 10px;
-
+      width: 80vw;
   }
 
+  #selecoes a:hover {
+      transform: scale(1.1);
+  }
 
+  footer {
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    width: 100vw;
+    height: 5vh;
+    bottom:0;
+    z-index: 1;
+  }
 }
 
 @media (min-width: 480px) {
