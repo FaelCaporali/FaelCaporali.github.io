@@ -1,116 +1,207 @@
+@media (min-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 
+  body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
 
-@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  header {
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    top:0;
+    z-index: 1;
+  }
 
-    body {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-flow: column nowrap;
-    }
+  header h1 {
+    padding-left: 4vw;
+  }
 
-    header {
-        background-color: black;
-        color: aliceblue;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed;
-        width: 100vw;
-        height: 10vh;
-    }
+  .hidden-box {
+    height: 8vh;
+    width: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 50%;
+    margin: 0 8vw;
+    transition: 0.4s;
+  }
 
-    header h1 {
-        padding-left: 4vw;
-    }
+  .opened-box {
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+    width: 80vw;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 0;
+    top: 0;
+    right: 0;
+  }
 
-    .hidden-box {
-        height: 8vh;
-        width: 8vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: aliceblue;
-        border-radius: 50%;
-        margin: 0 8vw;
-        transition: 0.4s;
-    }
+  .opened-box ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
 
-    .opened-box {
-        position: absolute;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        justify-content: space-around;
-        height: 50vh;
-        width: 80vw;
-        background-color: aliceblue;
-        color:black;
-        border-radius: 0;
-        top: 0;
-        right: 0;
-    }
-    .opened-box ul {
-        list-style: none;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-around;
-        align-items: flex-end;
-    }
-    .opened-box li {
-        background-color: black;
-        color: aliceblue;
-        margin: 1vw;
-        padding: 1vh;
-        border-radius: 10px;
-    }
+  .opened-box li {
+    background-color: black;
+    color: aliceblue;
+    margin: 1vw;
+    padding: 1vh;
+    border-radius: 10px;
+  }
 
-    .hidden {
-        display: none;
-    }
-    /* cod w3 schools com algumas alterações */ 
-    .todo-menu {
-        display: flex;
-        cursor: pointer;
-        flex-flow: column nowrap;
-        justify-content:space-around;
-        }
-      
-      .bar1, .bar2, .bar3 {
-        width: 9vw;
-        height: 0.5vh;
-        margin: .5vh 0;
-        background-color:black;
-        border-radius: 40px;
-        transition: 0.4s;
-        
-      }
-      
-      .change .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-2vw, 1vh);
-        transform: rotate(-45deg) translate(-2vw, 1vh);
-      }
-      
-      .change .bar2 {opacity: 0;}
-      
-      .change .bar3 {
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg) translate(-2vw, -1.2vh);
-      }
+  .hidden {
+    display: none;
+  }
 
-      .opened {
-          display: block;
-      }
+  .opened {
+    display: block;
+  }
+
+  /* cod w3 schools com algumas alterações */
+  .todo-menu {
+    display: flex;
+    cursor: pointer;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 9vw;
+    height: 0.5vh;
+    margin: 0.5vh 0;
+    background-color: black;
+    border-radius: 40px;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-2vw, 1vh);
+    transform: rotate(-45deg) translate(-2vw, 1vh);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-2vw, -1.2vh);
+    transform: rotate(45deg) translate(-2vw, -1.2vh);
+  }
+  main {
+      margin-top: 10vh;
+      padding: 2vw;
+  }
+  #caixa-conteudo {
+      display: flex;
+      flex-flow: column nowrap;
+  }
+  #descricao {
+      padding: 2vw;
+  }
+
+  #profile-pic-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+      border-radius: 40px;
+  }
+
+  #perfil {
+      border-radius: 50% 30%;
+      padding: 2vh;
+  }
+  #linkedin-logo {
+      width: 8vh;
+      height: 8vh;
+      border-radius: 50%;
+      position: relative;
+      top: -2vh;
+      left: 17vw;
+  }
+
+  #page-greetings {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  #explain ul {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      list-style: none inside;
+      padding: 2vw;
+  }
+
+  #explain ul li h2 {
+      text-align: center;
+  }
+
+  #explain ul li p {
+      text-align: justify;
+  }
+
+  #descricao h3 {
+    text-align: center;
+}
+
+  #selecoes {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+  #selecoes a {
+      background-color: black;
+      color: aliceblue;
+      padding: 1vh;
+      margin: .5vh;
+      border-radius: 10px;
+
+  }
+
 
 }
 
+@media (min-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+}
 
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
 
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
 
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
 
-@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
-@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
-@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}
