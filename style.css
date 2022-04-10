@@ -137,6 +137,7 @@
   #perfil {
       border-radius: 50%;
       padding: 2vh;
+      align-self: flex-start;
   }
   
   #linkedin-logo {
