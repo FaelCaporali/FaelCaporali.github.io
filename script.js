@@ -152,3 +152,4 @@ window.onload = () => {
     window.alert('Este é um portfólio dinâmico e em construção. Por enquanto verá funcionalidades e design quebrados. =]')
  
 };
+// só pra commita
