@@ -24,13 +24,13 @@
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-      <nav id="navbar" class="hidden">
+      <nav id="navbar" class="hidden" title="Áreas da página">
         <ul>
-          <li>Home</li>
-          <li>Institucional</li>
-          <li>Shopping Model</li>
-          <li>Veleje livre</li>
-          <li>Contato</li>
+          <li>HOME</li>
+          <li>IINSTITUCIONAL</li>
+          <li>SHOPPING MODEL</li>
+          <li>NAVEGAR POR AÍ</li>
+          <li>CONTATO</li>
         </ul>
       </nav>
     </div>
@@ -42,17 +42,20 @@
           <h1>PORTFÓLIO</h1>
           <p>FULL-STACK DEV</p>
         </div>
-        <img id="perfil"
-          src="https://media-exp1.licdn.com/dms/image/C5603AQFVstFCeQEUEw/profile-displayphoto-shrink_200_200/0/1641246407192?e=1651104000&v=beta&t=KWOdu01fUaq9MZrZoBSIH-pUfV1tNOoGXo0GtKi9YLU"
-          width="150px" alt="FaelCapoarli's linkedin profile picture" />
-        <nav id="shortcut-logos">
-          <a href="https://github.com/FaelCaporali" target="_blank"><img src="./manutenção/v1/githublogo.png"
-              alt="github logo" id="github-logo"></a>
-          <a href="https://www.linkedin.com/in/rafael-caporali-293045191/" target="_blank"></a><img
-            src="./manutenção/v1/LinkedinLogo.png" alt="linkedin logo" id="linkedin-logo"> </a>
-        </nav>
-        <a href="#chaser">Saiba mais</a>
-        </nav>
+        <div id="call-images">
+          <img id="perfil"
+            src="https://media-exp1.licdn.com/dms/image/C5603AQFVstFCeQEUEw/profile-displayphoto-shrink_200_200/0/1641246407192?e=1651104000&v=beta&t=KWOdu01fUaq9MZrZoBSIH-pUfV1tNOoGXo0GtKi9YLU"
+            width="150px" alt="FaelCapoarli's linkedin profile picture" />
+          <nav id="shortcut-logos">
+            <a href="https://github.com/FaelCaporali" target="_blank"><img src="./imagens/logos/github-seeklogo.com.svg"
+                alt="github logo" id="github-logo"></a>
+            <a href="https://www.linkedin.com/in/rafael-caporali-293045191/" target="_blank"><img
+              src="./imagens/logos/linkedin-icon-seeklogo.com.svg" alt="linkedin logo" id="linkedin-logo"></a>
+          </nav>
+        </div>
+        <div id="saiba-mais">
+        <a id="know-more" href="#chaser">Saiba mais <i class="fa-solid fa-angle-down"></i></a>
+      </div>
       </div>
       <div id="chaser"></div>
       <div id="page-greetings">
@@ -96,7 +99,7 @@
               </p>
             </li>
           </ul>
-          <h3> Chega de Readme, escolha por quais águas deseja navegar: </h3>
+          <span> Chega de Readme, escolha por quais águas deseja navegar: </span>
       </div>
     </section>
     <div id="selecoes">
@@ -105,9 +108,41 @@
       <a>Velejando por aí</a>
     </div>
   </main>
-  <footer id="roda-pe">
-    <section>contatos</section>
+  <footer>
+    <section id="contatos">
+      <div id="barra-linkendin" class="contact hidden-cont linkedin">
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-solid"></i>
+        <span class="hidden footer-spans">Linkedin</span>
+      </div>
+      <div id="barra-gmail"class="contact hidden-cont gmail">
+        <img src="./imagens/logos/kisspng-computer-icons-gmail-scalable-vector-graphics-emai-gmail-size-icon-5ab1a5580ffdb7.2247625415215916400655.png" id="gmail-ico">
+        <i class="fa-solid"></i>
+        <span class="hidden footer-spans">E-mail</span>
+      </div>
+      <div id="barra-whatsapp" class="contact hidden-cont whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-solid"></i>
+        <span class="hidden footer-spans">WhatsApp</span>
+      </div>
+      <div id="barra-github" class="contact hidden-cont github">
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-solid"></i>
+        <span class="hidden footer-spans">GitHub</span>
+      </div>
+    </section>
+    <hr>
+    <section id="feedback" class="feedback">
+      <h6>Deixe um feedback! <i class="fa-solid fa-angle-up"></i></h6> 
+      <div id="barra-modal" class="hidden">
+        <form>
+          <textarea rows="17" cols="22"></textarea>
+          <button></button>
+        </form>
+      </div>
+    </section>
   </footer>
+  <script src="https://kit.fontawesome.com/4570fe17fe.js" crossorigin="anonymous"></script>
   <script text="text/javascript" src="./script.js"></script>
 </body>
 
