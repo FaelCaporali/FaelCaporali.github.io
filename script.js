@@ -187,4 +187,3 @@ window.onload = () => {
   );
   window.location.href = '#phone-chaser';
 };
-//só pra commitar
