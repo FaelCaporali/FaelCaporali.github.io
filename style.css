@@ -214,7 +214,7 @@
     color: inherit;
   }
 
-  .phone-chaser {
+  #phone-chaser {
     position: absolute;
     top: 10vh;
   }
