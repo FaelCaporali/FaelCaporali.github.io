@@ -186,3 +186,5 @@ window.onload = () => {
     "Este é um portfólio dinâmico e em construção, não se assuste se alguma funcionalidade estiver quebrada. Para uma melhor experiência, por enquanto navegue em dispositivos com telas pequenas. =]"
   );
 };
+
+// mantendo branch ativa
