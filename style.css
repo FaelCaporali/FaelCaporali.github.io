@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  color: unset;
   scroll-behavior:smooth;
 }
 
@@ -361,6 +362,7 @@
     justify-content: space-around;
     align-items: center;
     flex-basis: 45%;
+    color: #F2B33D;
   }
 
   #external a {
@@ -417,12 +419,12 @@
 
   #gmail-ico {
     width: 6vw;
-    margin-bottom: 1vh;
   }
 
   .contact i {
-    margin-bottom: 1vh;
+    margin-bottom: 1.5vh;
   }
+
 
   div.opened-cont.linkedin {
     background-color: #0A66C2;
