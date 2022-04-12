@@ -29,13 +29,13 @@ window.onload = () => {
 
   const changeSandBoxColor = (event) => {
     if (event.type === "mouseenter") {
-      document.querySelector(".bar1").style.backgroundColor = "aliceblue";
-      document.querySelector(".bar2").style.backgroundColor = "aliceblue";
-      document.querySelector(".bar3").style.backgroundColor = "aliceblue";
+      document.querySelector(".bar1").style.backgroundColor = "#F2F2F2";
+      document.querySelector(".bar2").style.backgroundColor = "#F2F2F2";
+      document.querySelector(".bar3").style.backgroundColor = "#F2F2F2";
     } else {
-      document.querySelector(".bar1").style.backgroundColor = "black";
-      document.querySelector(".bar2").style.backgroundColor = "black";
-      document.querySelector(".bar3").style.backgroundColor = "black";
+      document.querySelector(".bar1").style.backgroundColor = "#0D0D0D";
+      document.querySelector(".bar2").style.backgroundColor = "#0D0D0D";
+      document.querySelector(".bar3").style.backgroundColor = "#0D0D0D";
     }
   };
 

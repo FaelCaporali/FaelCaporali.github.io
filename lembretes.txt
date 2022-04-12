@@ -1,0 +1,27 @@
+gradiente img fundo 1
+
+#F2F2F2
+#A6A6A6
+#737373
+#404040
+#0D0D0D
+
+gradiente testes
+
+1
+NAO ROLOU
+2
+ESSE
+#04D9D9
+#04BF8A
+#F2B33D
+#BF6B04
+#F2F2F2
+
+3
+
+#024873
+#0378A6
+#2C4001
+#D9AC25
+#BF7E04
