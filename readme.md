@@ -12,7 +12,7 @@ Se você faz parte do corpo docente da Trybe, me manda um feedback!!! =]
 cuméQuiéIsso???
 
 O portfólio é apresentado e construído ao longo que os conhecimentos são adquiridos e consolidados, adicionando novas funcionalidades e áreas. Assim o projeto é modular ao longo da formação, possibilitando o acompanhamento da evolução cronológica.
-*** Se você quer saber mais sobre como foi o desenvolvimento, é só ver os cPR's anteriores e acompanhar meu fluxo de trabalho! ***
+*** Se você quer saber mais sobre como foi o desenvolvimento, é só ver os PR's anteriores e acompanhar meu fluxo de trabalho! ***
 
 Cada área terá por objetivo demonstrar a evolução cronológica do conhecimento adquirido em cada módulo Trybe e monta uma parte das informações de um portfólio completo.
 Usando das ferramentas, recursos e funcionalidades em locais pontuais, cada área da página busca aliar a melhor escolha de desenvolvimento e abordagem para integrar a àrea à suas hipotéticas aplicações práticas, buscando ao final a experiência imersiva.

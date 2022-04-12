@@ -119,26 +119,29 @@
   .opened-box li {
     border: rgba(0, 0, 0, 0.3) solid 0.5vh;
     border-radius: 10px;
-    width: 80%;
     text-align: center;
     transition: 0.5s;
   }
 
-  .opened-box li:hover {
+  .opened-box a{
+    width: 80%;
+  }
+
+  .opened-box a li:hover {
     cursor: pointer;
     background-color: black;
     transition: 0.5s;
     transform: scale(1.1);
   }
 
-  .opened-box li:hover a {
+  .opened-box li:hover {
     color: aliceblue
   }
 
   #sticky-home {
     background-color: black;
     position:sticky;
-    width: 2vw;
+    width: 5vw;
     height: 10vh;
     border-radius: 10px 0 0 10px;
     top: 80vh;;
