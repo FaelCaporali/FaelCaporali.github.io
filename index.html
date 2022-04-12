@@ -5,16 +5,23 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <title>Fael Caporali</title>
 </head>
 
 <body>
+  <div id="home-chaser"></div>
+  <div id="greetings-chaser"></div>
+  <div id="port-chaser"></div>
+  <div id="area-one-chaser"></div>
+  <div id="area-two-chaser"></div>
+  <div id="area-three-chaser"></div>
+  <div id="final-chaser"></div>
   <header id="cabecalho">
     <h1 id="nome">Rafael Honório Caporali de Freitas</h1>
 
@@ -26,8 +33,8 @@
       </div>
       <nav id="navbar" class="hidden" title="Áreas da página">
         <ul>
-          <li>HOME</li>
-          <li>IINSTITUCIONAL</li>
+          <li><a href="#home-chaser">HOME</a></li>
+          <li>INSTITUCIONAL</li>
           <li>SHOPPING MODEL</li>
           <li>NAVEGAR POR AÍ</li>
           <li>CONTATO</li>
@@ -35,78 +42,87 @@
       </nav>
     </div>
   </header>
+  <div id="sticky-home"><a href="#home-chaser"><i class="fa-solid fa-angle-up"></i></a></div>
   <main id="caixa-conteudo">
-    <section id="descricao">
-      <div id="hello-world">
-        <div id="first-call">
-          <h1>PORTFÓLIO</h1>
-          <p>FULL-STACK DEV</p>
-        </div>
-        <div id="call-images">
-          <img id="perfil"
-            src="https://media-exp1.licdn.com/dms/image/C5603AQFVstFCeQEUEw/profile-displayphoto-shrink_200_200/0/1641246407192?e=1651104000&v=beta&t=KWOdu01fUaq9MZrZoBSIH-pUfV1tNOoGXo0GtKi9YLU"
-            width="150px" alt="FaelCapoarli's linkedin profile picture" />
-          <nav id="shortcut-logos">
-            <a href="https://github.com/FaelCaporali" target="_blank"><img src="./imagens/logos/github-seeklogo.com.svg"
-                alt="github logo" id="github-logo"></a>
-            <a href="https://www.linkedin.com/in/rafael-caporali-293045191/" target="_blank"><img
-              src="./imagens/logos/linkedin-icon-seeklogo.com.svg" alt="linkedin logo" id="linkedin-logo"></a>
-          </nav>
-        </div>
-        <div id="saiba-mais">
-        <a id="know-more" href="#chaser">Saiba mais <i class="fa-solid fa-angle-down"></i></a>
+    <section id="hello-world" class="master-box">
+      <div id="first-call">
+        <h1>PORTFÓLIO</h1>
+        <p>FULL-STACK DEV</p>
       </div>
+      <div id="call-images">
+        <img id="perfil"
+          src="https://media-exp1.licdn.com/dms/image/C5603AQFVstFCeQEUEw/profile-displayphoto-shrink_200_200/0/1641246407192?e=1651104000&v=beta&t=KWOdu01fUaq9MZrZoBSIH-pUfV1tNOoGXo0GtKi9YLU"
+          width="150px" alt="FaelCapoarli's linkedin profile picture" />
+        <nav id="shortcut-logos">
+          <a href="https://github.com/FaelCaporali" target="_blank"><img src="./imagens/logos/github-seeklogo.com.svg"
+              alt="github logo" id="github-logo" /></a>
+          <a href="https://www.linkedin.com/in/rafael-caporali-293045191/" target="_blank"><img
+              src="./imagens/logos/linkedin-icon-seeklogo.com.svg" alt="linkedin logo" id="linkedin-logo" /></a>
+        </nav>
       </div>
-      <div id="chaser"></div>
-      <div id="page-greetings">
-        <section id="explain">
-          <ul>
-            <li>
-              <h2>Bem vind@!</h2>
-              <p>
-                Olá! Que feliz que você chegou ao meu portfólio! Aqui, você
-                encontrará meus trabalhos realizados como um DEV-fullStack
-                durante o curso da Trybe.
-              </p>
-            </li>
-            <li>
-              <h2>Como funciona?</h2>
-              <p> A página busca ser imersiva e interativa. Para conseguir apresentar um portfóliodesta forma, a
-                página é separado em 3 áreas. </p>
-              <p> Cada área contém um tipo de informação e abordagem específica e você poderá me conhecerá um pouco
-                mais experienciando meus trabalhos de forma dinâmica!. </p>
-            </li>
-            <li>
-              <h2>Institucional</h2>
-              <p>
-                Nesta área você encontrará uma abordagem minimalista, informações pontuais e abordagem clássica sobre
-                meu currículo.
-              </p>
-            </li>
-            <li>
-              <h2>Fael's E-market</h2>
-              <p>
-                Aqui, você poderá ver minhas capacidades como DEV e projetos que desenvolvi. Uma área voltada a
-                tecnologias, funcionalidades e habilidades técnicas.
-              </p>
-            </li>
-            <li>
-              <h2>Velejando por aí</h2>
-              <p>
-                Em uma abordagem mais moderna e interativa você navegará pelas águas em que já naveguei, vendo um
-                pouco mais de criatividade implementada em páginas, valores que estimo como humano e minhas
-                habilidades sociocomportamentais desenvolvidas. Vem me conhecer!
-              </p>
-            </li>
-          </ul>
-          <span> Chega de Readme, escolha por quais águas deseja navegar: </span>
+      <div id="saiba-mais">
+        <a id="know-more" href="#greetings-chaser">Saiba mais <i class="fa-solid fa-angle-down"></i></a>
       </div>
     </section>
-    <div id="selecoes">
-      <a>Minha Página Institucional</a>
-      <a>Fael's e-Market</a>
-      <a>Velejando por aí</a>
-    </div>
+
+    <section id="wellcome-abord">
+      <ul>
+        <li class="master-box">
+          <h2>Bem vind@!</h2>
+          <p> Olá! Que feliz que você chegou ao meu portfólio! A idéia aqui é construir um portfólio acadêmico e dinâmico, onde você
+          possa me conhecer melhor a acompanhar meus trabalhos durante a formação na Trybe.<br>
+          Não é um portfólio convencional e por isso não se assuste se encontrar funcionalidades ou design quebrados, a página estará pronta ao final do curso!
+          </p>
+          <a href="#port-chaser"><h2><i class="fa-solid fa-angle-down"></i></h2></a>
+        </li>
+        <li class="master-box">
+          <h2>Como funciona?</h2>
+          <p>
+            <!--Esse é um portfólio imersivo. Para apresentar um portfólio de um DEV-FullStack, você não acha que a melhor forma é navegando em um site? Mas como ser direto, criativo, bonito e funcional em um site?<br>
+            Bom, eu acredito que em um só, não tem como...<br>
+            Então aqui, você encontrará três páginas em uma, cada uma contendo um propósito e público diferente.
+            Cada área contém um tipo de informação e abordagem específica e
+            você poderá me conhecerá um pouco mais experienciando meus
+            trabalhos de forma dinâmica!.-->
+          </p>
+          <a href="#area-one-chaser"><h2><i class="fa-solid fa-angle-down"></i></h2></a>
+        </li>
+        <li class="master-box">
+          <h2>Institucional</h2>
+          <p>
+            Nesta área você encontrará uma abordagem minimalista, informações
+            pontuais e abordagem clássica sobre meu currículo.
+          </p>
+          <a href="#area-two-chaser"><h2><i class="fa-solid fa-angle-down"></i></h2></a>
+        </li>
+        <li class="master-box">
+          <h2>Fael's E-market</h2>
+          <p>
+            Aqui, você poderá ver minhas capacidades como DEV e projetos que
+            desenvolvi. Uma área voltada a tecnologias, funcionalidades e
+            habilidades técnicas.
+          </p>
+          <a href="#area-three-chaser"><h2><i class="fa-solid fa-angle-down"></i></h2></a>
+        </li>
+        <li class="master-box">
+          <h2>Velejando por aí</h2>
+          <p>
+            Em uma abordagem mais moderna e interativa você navegará pelas
+            águas em que já naveguei, vendo um pouco mais de criatividade
+            implementada em páginas, valores que estimo como humano e minhas
+            habilidades sociocomportamentais desenvolvidas. Vem me conhecer!
+          </p>
+          <a href="#final-chaser"><h2><i class="fa-solid fa-angle-down"></i></h2></a>
+        </li>
+      </ul>
+      <section id="selecoes" class="master-box">
+        <span> Chega de Readme, escolha por quais águas deseja navegar: </span>
+        <a>Minha Página Institucional</a>
+        <a>Fael's e-Market</a>
+        <a>Velejando por aí</a>
+        <!--<a href="#home-chaser">HOME <i class="fa-solid fa-angle-up"></i></a>-->
+      </section>
+    </section>
   </main>
   <footer>
     <section id="contatos">
@@ -115,8 +131,10 @@
         <i class="fa-solid"></i>
         <span class="hidden footer-spans">Linkedin</span>
       </div>
-      <div id="barra-gmail"class="contact hidden-cont gmail">
-        <img src="./imagens/logos/kisspng-computer-icons-gmail-scalable-vector-graphics-emai-gmail-size-icon-5ab1a5580ffdb7.2247625415215916400655.png" id="gmail-ico">
+      <div id="barra-gmail" class="contact hidden-cont gmail">
+        <img
+          src="./imagens/logos/kisspng-computer-icons-gmail-scalable-vector-graphics-emai-gmail-size-icon-5ab1a5580ffdb7.2247625415215916400655.png"
+          id="gmail-ico" />
         <i class="fa-solid"></i>
         <span class="hidden footer-spans">E-mail</span>
       </div>
@@ -131,9 +149,9 @@
         <span class="hidden footer-spans">GitHub</span>
       </div>
     </section>
-    <hr>
+    <hr />
     <section id="feedback" class="feedback">
-      <h6>Deixe um feedback! <i class="fa-solid fa-angle-up"></i></h6> 
+      <h6>Deixe um feedback! <i class="fa-solid fa-angle-up"></i></h6>
       <div id="barra-modal" class="hidden">
         <form>
           <textarea rows="17" cols="22"></textarea>

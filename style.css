@@ -1,10 +1,15 @@
+*, a:active, a:after, a:before, a:visited, a:any-link{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+  scroll-behavior:smooth;
+}
 @media (min-width: 320px) {
   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 
   body {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
     font-family: "Poppins", sans-serif;
     background-color: aliceblue;
   }
@@ -28,81 +33,31 @@
   }
 
   .hidden-box {
-    height: 7vh;
-    width: 7vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
-    border-radius: 50%;
     margin: 4vw;
     transition: 0.5s;
   }
 
-  .hidden-box:hover {
-    background-color: black;
-    border: solid aliceblue .1vh;
+  #sand {
+    display: flex;
+    cursor: pointer;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 7vh;
+    height: 7vh;
+    padding: 2.5vw;
+    background-color: aliceblue;
+    border-radius: 50%;
     transition: 0.5s;
   }
 
-  .opened-box {
-    position: absolute;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: space-around;
-    height: 50vh;
-    width: 80vw;
-    background-color: aliceblue;
-    color: black;
-    border-radius: 10px;
-    top: 2vh;
-    right: -2vw;
-  }
-
-  .opened-box ul {
-    list-style:none;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-items: stretch;
-  }
-
-  .opened-box li {
-    border: aliceblue solid 0.5vh;
-    margin: 1vw;
-    padding: 1vh;
-    border-radius: 10px;
-    width: 43vw;
-    text-align: center;
-    transition: 1s;
-  }
-
-  .opened-box li:hover {
-    cursor: pointer;
+  #sand:hover {
     background-color: black;
-    border: solid aliceblue 0.2;
-    transition: 1s;
-    transform: scale(1.1);
-  }
-
-  .hidden {
-    display: none;
-  }
-
-  .opened {
-    display: block;
-  }
-
-  /* cod w3 schools com algumas alterações */
-  .todo-menu {
-    display: flex;
-    cursor: pointer;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 4vh;
-    height: 4vh;
+    border: solid aliceblue 0.3vh;
+    transition: 0.5s;
   }
 
   .bar1,
@@ -112,8 +67,11 @@
     height: 0.6vh;
     background-color: black;
     border-radius: 40px;
+    transition: 0.4s;
   }
 
+    /* cod w3 schools com algumas alterações */
+  
   /* .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-2vw, 1vh);
     transform: rotate(-45deg) translate(-2vw, 1vh);
@@ -127,15 +85,123 @@
     -webkit-transform: rotate(45deg) translate(-2vw, -1.2vh);
     transform: rotate(45deg) translate(-2vw, -1.2vh);
   } */
-  main {
-    padding: 2vw;
-  }
-  #caixa-conteudo {
+
+  .opened-box {
+    position: absolute;
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+    width: 65vw;
+    background-color: aliceblue;
+    border-radius: 10px;
+    top: 1vh;
+    right: 1vh;
+    transition: 0.5s;
   }
-  #descricao {
-    padding: 2vw;
+
+  .opened-box nav {
+    width: 90%;
+    height: 75%;
+  }
+
+  .opened-box ul {
+    list-style:none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 100%;
+    color: black;
+  }
+
+  .opened-box li {
+    border: rgba(0, 0, 0, 0.3) solid 0.5vh;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  .opened-box li:hover {
+    cursor: pointer;
+    background-color: black;
+    transition: 0.5s;
+    transform: scale(1.1);
+  }
+
+  .opened-box li:hover a {
+    color: aliceblue
+  }
+
+  #sticky-home {
+    background-color: black;
+    position:sticky;
+    width: 2vw;
+    height: 10vh;
+    border-radius: 10px 0 0 10px;
+    top: 80vh;;
+    left: 98vw;
+    transition: 0.4s;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  }
+
+  #sticky-home i {
+    display: none;
+  }
+
+  #sticky-home:hover {
+    width: 10vh;
+    transition: 0.4s;
+  }
+
+  #sticky-home:hover i {
+    display: block;
+    color: aliceblue;
+    font-size: x-large;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .opened {
+    display: block;
+  }
+
+  .master-box {
+    width: 85vw;
+    height: 80vh;
+    margin: 12.5vh auto 7.5vh auto;
+    border-radius: 40px;
+    transition: 0.4s;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+  }
+
+  .master-box h2 {
+    text-align: center;
+  }
+
+  .master-box p {
+    color:rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 1vh;
+  }
+
+  #home-chaser {
+    position: absolute;
+    top: 0;
+  }
+
+  main {
+    display: flex;
+    flex-flow: column nowrap;
   }
 
   #hello-world {
@@ -146,23 +212,18 @@
     align-items: stretch;
     background-image: url(./imagens/construction-1921518.jpg);
     background-size: cover;
-    border-radius: 40px;
-    height: 79vh;
-    margin-top: 1.4vh;
     color: aliceblue;
+    margin: -7.5vh auto 7.5vh auto;
   }
 
   #first-call {
+    margin-top: 1%;
     flex-grow: 1;
-    flex-shrink: 1;
   }
 
   #call-images {
     display: flex;
     align-items: flex-start;
-    flex-grow: 3;
-    flex-shrink: 1;
-    /* border: green solid 3px; */
   }
 
   #perfil {
@@ -177,14 +238,17 @@
     flex-flow: column nowrap;
     justify-content: space-evenly ;
     align-items: flex-start;
-    /* border: red solid 3px; */
   }
 
   #shortcut-logos img {
-    width: 9vw;
-    height: 9vw;
-    margin: 1vh 0 0 0;
-    /* border: solid black 2px; */
+    width: 7vw;
+    height: 7vw;
+    opacity: 0.6;
+    margin-top: 1vh;
+  }
+
+  #shortcut-logos img:hover {
+    opacity: 1;
   }
 
   #saiba-mais {
@@ -196,9 +260,8 @@
   }
 
   #know-more {
-    /* background-color: black; */
     color: aliceblue;
-    margin: 1.5vh 0;
+    margin: 2vh 0;
     text-decoration: none;
     width: 50vw;
     border-radius: 10px;
@@ -214,42 +277,43 @@
     opacity: 1;
   }
 
-  #page-greetings {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: space-around;
-  }
 
-  #explain ul {
+
+  #welcome-aboard ul {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     list-style: none inside;
-    padding: 2vw;
-    background-color: black;
-    border-radius: 20px;
   }
 
-  #explain ul li {
-    background-color: dimgray;
-    color: black;
-    margin: 2vh;
-    border-radius: 20px;
-    padding: 2vw;
+  #greetings-chaser {
+    position: absolute;
+    top: 100vh;
   }
 
-  #explain ul li h2 {
-    text-align: center;
-    margin-top: 0;
+  #port-chaser {
+    position: absolute;
+    top: 192.5vh;
   }
 
-  #explain ul li p {
-    text-align: justify;
+  #area-one-chaser {
+    position: absolute;
+    top: 285vh;
   }
 
-  #descricao h3 {
-    text-align: center;
+  #area-two-chaser {
+    position: absolute;
+    top: 377.5vh;
+  }
+
+  #area-three-chaser {
+    position: absolute;
+    top: 470vh;
+  }
+
+  #final-chaser {
+    position: absolute;
+    top: 562.5vh;
   }
 
   #selecoes {
@@ -257,6 +321,7 @@
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 0;
   }
 
   #selecoes a {
