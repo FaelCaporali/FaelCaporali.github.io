@@ -116,15 +116,6 @@ window.onload = () => {
       ico.classList.add("fa-angle-up");
     }
   };
-
-  const redirectFooter = (event) => {
-    if (event.target.classList.contains("linkedin")) {
-      window.open("https://www.linkedin.com/in/rafael-caporali-293045191/");
-    } else if (event.target.classList.contains("github")) {
-      window.open("https://github.com/FaelCaporali");
-    }
-  };
-  // inicialização
   funcionalidadesTela();
   window.addEventListener("resize", funcionalidadesTela);
   document.querySelector("#sand").addEventListener("click", menuSand);
@@ -163,15 +154,12 @@ window.onload = () => {
     .querySelector(".github")
     .addEventListener("mouseleave", footerMouseHandler);
 
-  document.querySelector(".github").addEventListener("click", redirectFooter);
-  document.querySelector(".linkedin").addEventListener("click", redirectFooter);
-
-  document
-    .getElementById("sand")
-    .addEventListener("mouseenter", changeSandBoxColor);
-  document
-    .getElementById("sand")
-    .addEventListener("mouseleave", changeSandBoxColor);
+  // document
+  //   .getElementById("sand")
+  //   .addEventListener("mouseenter", changeSandBoxColor);
+  // document
+  //   .getElementById("sand")
+  //   .addEventListener("mouseleave", changeSandBoxColor);
   document
     .querySelector(".feedback h6")
     .addEventListener("mouseenter", changeIconFeedback);
