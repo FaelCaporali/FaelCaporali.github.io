@@ -185,6 +185,6 @@ window.onload = () => {
   window.alert(
     "Este é um portfólio dinâmico e em construção, não se assuste se alguma funcionalidade estiver quebrada. Para uma melhor experiência, por enquanto navegue em dispositivos com telas pequenas. =]"
   );
-  window.location.href = '#home-chaser';
+  window.location.href = '#phone-chaser';
 };
 //só pra commitar
