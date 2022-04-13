@@ -4,6 +4,11 @@ window.onload = () => {
     if (window.innerWidth < 319) {
       alert("Use um dispositivo maior!");
     }
+    if (window.innerWidth > 375) {
+      window.alert(
+        "Para uma melhor experiência, por enquanto navegue em dispositivos com telas pequenas. Este é um portfólio dinâmico e em construção, não se assuste se alguma funcionalidade estiver quebrada. =]"
+      );
+    }
     if (window.innerWidth < 550) {
       titulo.innerText = "Fael Caporali";
     } else if (window.innerWidth > 549) {
@@ -169,8 +174,4 @@ window.onload = () => {
   document
     .querySelector(".feedback h6")
     .addEventListener("click", openfeedback);
-
-  window.alert(
-    "Este é um portfólio dinâmico e em construção, não se assuste se alguma funcionalidade estiver quebrada. Para uma melhor experiência, por enquanto navegue em dispositivos com telas pequenas. =]"
-  );
 };
