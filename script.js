@@ -4,6 +4,11 @@ window.onload = () => {
     if (window.innerWidth < 319) {
       alert("Use um dispositivo maior!");
     }
+    if (window.innerWidth > 375) {
+      window.alert(
+        "Para uma melhor experiência, por enquanto navegue em dispositivos com telas pequenas. Este é um portfólio dinâmico e em construção, não se assuste se alguma funcionalidade estiver quebrada. =]"
+      );
+    }
     if (window.innerWidth < 550) {
       titulo.innerText = "Fael Caporali";
     } else if (window.innerWidth > 549) {
@@ -13,29 +18,15 @@ window.onload = () => {
   //cabeçalho
   const menuSand = () => {
     const cBox = document.getElementById("myMenu").classList;
-    const cBttCont = document.getElementById("navbar").classList;
+    const cBttCont = document.getElementById("menu-superior").classList;
     if (cBox.contains("hidden-box")) {
       cBox.remove("hidden-box");
       cBox.add("opened-box");
       cBttCont.remove("hidden");
-      cBttCont.add("opened");
     } else {
       cBox.remove("opened-box");
       cBox.add("hidden-box");
-      cBttCont.remove("opened");
       cBttCont.add("hidden");
-    }
-  };
-
-  const changeSandBoxColor = (event) => {
-    if (event.type === "mouseenter") {
-      document.querySelector(".bar1").style.backgroundColor = "#F2F2F2";
-      document.querySelector(".bar2").style.backgroundColor = "#F2F2F2";
-      document.querySelector(".bar3").style.backgroundColor = "#F2F2F2";
-    } else {
-      document.querySelector(".bar1").style.backgroundColor = "#0D0D0D";
-      document.querySelector(".bar2").style.backgroundColor = "#0D0D0D";
-      document.querySelector(".bar3").style.backgroundColor = "#0D0D0D";
     }
   };
 
@@ -52,125 +43,97 @@ window.onload = () => {
   };
 
   // funcionalidades roda-pé
-  const footerMouseHandler = (event) => {
-    if (event.type === "mouseenter") {
-      event.target.classList.remove("hidden-cont");
-      event.target.classList.add("opened-cont");
-
-      event.target.children[1].classList.add("fa-arrow-down");
-      event.target.children[2].classList.remove("hidden");
-      event.target.children[2].classList.add("opened");
+  const displayStickerContent = (event) => {
+    const ico = event.target.children[1];
+    const text = event.target.children[2]
+    if (event.type === 'mouseleave') {
+      ico.classList.remove('fa-arrow-down');
+      text.classList.add('hidden');
     } else {
-      event.target.classList.remove("opened-cont");
-      event.target.classList.add("hidden-cont");
-
-      event.target.children[1].classList.remove("fa-arrow-down");
-      event.target.children[2].classList.add("hidden");
-      event.target.children[2].classList.remove("opened");
+      ico.classList.add('fa-arrow-down');
+      text.classList.remove('hidden');
     }
   };
-
-
-
+  
+  const setStickersListeners = () => {
+    document.querySelectorAll('.contact').forEach(e => e.addEventListener('mouseenter', displayStickerContent));
+    document.querySelectorAll('.contact').forEach(e => e.addEventListener('mouseleave', displayStickerContent));
+  }
+  
   const changeIconFeedback = (event) => {
-    const ico = document.querySelector(".feedback i");
-    if (event.type === "mouseenter" && ico.classList.contains("fa-angle-up")) {
-      ico.classList.remove("fa-angle-up");
-      ico.classList.add("fa-angles-up");
-    } else if (
-      event.type === "mouseleave" &&
-      ico.classList.contains("fa-angles-up")
-    ) {
-      ico.classList.remove("fa-angles-up");
-      ico.classList.add("fa-angle-up");
-    } else if (
-      event.type === "mouseenter" &&
-      ico.classList.contains("fa-angle-down")
-    ) {
-      ico.classList.remove("fa-angle-down");
-      ico.classList.add("fa-angles-down");
-    } else if (
-      event.type === "mouseleave" &&
-      ico.classList.contains("fa-angles-down")
-    ) {
-      ico.classList.remove("fa-angles-down");
-      ico.classList.add("fa-angle-down");
+    const ico = document.querySelector('.feedback i');
+    const box = document.getElementById('feedbackid');
+    const arrowUp = () => {
+      if (event.type === 'mouseenter') {
+        ico.classList.remove('fa-angle-up');
+        ico.classList.add('fa-angles-up')
+      } else {
+        ico.classList.remove('fa-angles-up');
+        ico.classList.add('fa-angle-up');
+      }
     }
+    const arrowsDown = () => {
+      if (event.type === 'mouseenter') {
+        ico.classList.remove('fa-angle-down');
+        ico.classList.add('fa-angles-down')
+      } else {
+        ico.classList.remove('fa-angles-down');
+        ico.classList.add('fa-angle-down');
+      }
+    }
+    return box.classList.contains('feedback-up') ? arrowsDown() : arrowUp();
   };
 
   const openfeedback = () => {
-    const barraModal = document.querySelector("#barra-modal");
-    const feedBar = document.querySelector("#feedback");
-    const ico = document.querySelector(".feedback i");
-    if (barraModal.classList.contains("hidden")) {
+    const popUpFeedback = document.getElementById('feedbackid');
+    const ico = document.querySelector("#feedbackid i");
+    const feedText = document.querySelector('#feedbackid form');
+    const opening = () => {
       ico.classList.remove("fa-angle-up");
       ico.classList.remove("fa-angles-up");
       ico.classList.add("fa-angle-down");
-      feedBar.classList.add("feedback-opened");
-      barraModal.classList.remove("hidden");
-    } else {
-      feedBar.classList.remove("feedback-opened");
-      barraModal.classList.add("hidden");
+      popUpFeedback.classList.add("feedback-up");
+      feedText.classList.remove("hidden");
+    }      
+    const closing = () => {
+      popUpFeedback.classList.remove("feedback-up");
+      feedText.classList.add("hidden");
       ico.classList.remove("fa-angle-down");
       ico.classList.remove("fa-angles-down");
       ico.classList.add("fa-angle-up");
     }
+    return feedText.classList.contains("hidden") ? opening() : closing();
   };
+
+  const scroller = (event) => {
+    event.target.id === 'next' ? window.scrollBy(0, window.innerHeight) : window.scrollBy(0, window.innerHeight * -1);
+  }
+  document.getElementById('next').addEventListener('click', scroller);
+  document.getElementById('prev').addEventListener('click', scroller);
+
+  // seta funcionalidades da tela e escuta mudança de tamanho
   funcionalidadesTela();
   window.addEventListener("resize", funcionalidadesTela);
-  document.querySelector("#sand").addEventListener("click", menuSand);
+  // adiciona/retiran conteudo dos stickers
+  setStickersListeners();
+  // menu sand abrir/fechar
+  document.querySelector(".sanduiche").addEventListener("click", menuSand);
+  //icone botao primeiro frame
   document
     .querySelector("#know-more")
     .addEventListener("mouseenter", changeIconKnowMore);
   document
     .querySelector("#know-more")
     .addEventListener("mouseleave", changeIconKnowMore);
-
+// icone feedback muda
   document
-    .querySelector(".linkedin")
-    .addEventListener("mouseenter", footerMouseHandler);
-  document
-    .querySelector(".linkedin")
-    .addEventListener("mouseleave", footerMouseHandler);
-
-  document
-    .querySelector(".gmail")
-    .addEventListener("mouseenter", footerMouseHandler);
-  document
-    .querySelector(".gmail")
-    .addEventListener("mouseleave", footerMouseHandler);
-
-  document
-    .querySelector(".whatsapp")
-    .addEventListener("mouseenter", footerMouseHandler);
-  document
-    .querySelector(".whatsapp")
-    .addEventListener("mouseleave", footerMouseHandler);
-
-  document
-    .querySelector(".github")
-    .addEventListener("mouseenter", footerMouseHandler);
-  document
-    .querySelector(".github")
-    .addEventListener("mouseleave", footerMouseHandler);
-
-  // document
-  //   .getElementById("sand")
-  //   .addEventListener("mouseenter", changeSandBoxColor);
-  // document
-  //   .getElementById("sand")
-  //   .addEventListener("mouseleave", changeSandBoxColor);
-  document
-    .querySelector(".feedback h6")
+    .querySelector("#feedbackid h4")
     .addEventListener("mouseenter", changeIconFeedback);
   document
-    .querySelector(".feedback h6")
+    .querySelector("#feedbackid h4")
     .addEventListener("mouseleave", changeIconFeedback);
+    // form feddback abre/fecha
   document
-    .querySelector(".feedback h6")
+    .querySelector("#feedbackid h4")
     .addEventListener("click", openfeedback);
-
-  window.alert(
-    "Este é um portfólio dinâmico e em construção, não se assuste se alguma funcionalidade estiver quebrada. Para uma melhor experiência, por enquanto navegue em dispositivos com telas pequenas. =]"
-  );
 };

@@ -1,266 +1,245 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Fael Caporali</title>
-  </head>
 
-  <body>
-    <div id="home-chaser"></div>
-    <div id="greetings-chaser"></div>
-    <div id="port-chaser"></div>
-    <div id="area-one-chaser"></div>
-    <div id="area-two-chaser"></div>
-    <div id="area-three-chaser"></div>
-    <div id="final-chaser"></div>
-    <header id="cabecalho">
-      <h1 id="nome">Rafael Honório Caporali de Freitas</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Fael Caporali</title>
+</head>
 
-      <div id="myMenu" class="hidden-box">
-        <div id="sand" class="todo-menu">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-        <nav id="navbar" class="hidden" title="Áreas da página">
-          <ul>
-            <a href="#home-chaser" class="btt">
-              <li>HOME</li>
-            </a>
-            <a class="btt" href="#area-one-chaser">
-              <li>INTITUCIONAL</li>
-            </a>
-            <a class="btt" href="#area-two-chaser">
-              <li>TECH AREA</li>
-            </a>
-            <a class="btt" href="#area-three-chaser">
-              <li>NAVEGANDO</li>
-            </a>
-            <a href="#final-chaser" class="btt">
-              <li>CONTATO</li>
-            </a>
-          </ul>
-        </nav>
+<body>
+  <div id="home-chaser"></div>
+  <div id="greetings-chaser"></div>
+  <div id="port-chaser"></div>
+  <div id="area-one-chaser"></div>
+  <div id="area-two-chaser"></div>
+  <div id="area-three-chaser"></div>
+  <div id="final-chaser"></div>
+  <header id="cabecalho">
+    <h1 id="nome">Rafael Honório Caporali de Freitas</h1>
+
+    <div id="myMenu" class="hidden-box">
+      <div class="sanduiche">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
-    </header>
-    <div id="sticky-home">
-      <a href="#home-chaser"><i class="fa-solid fa-angle-up"></i></a>
+      <div id="menu-superior" class="hidden navbar">
+        <a href="#home-chaser" class="btt">HOME</a>
+        <a class="btt" href="#area-one-chaser">INTITUCIONAL</a>
+        <a class="btt" href="#area-two-chaser">TECH AREA</a>
+        <a class="btt" href="#area-three-chaser">NAVEGANDO</a>
+        <a href="#final-chaser" class="btt">CONTATO</a>
+      </div>
     </div>
-    <main id="caixa-conteudo">
-      <section id="hello-world" class="master-box">
-        <div id="first-call">
-          <h1>PORTFÓLIO</h1>
-          <p>DEV FULL-STACK</p>
-        </div>
-        <div id="call-images">
-          <img
-            id="perfil"
+  </header>
+  <div id="sticky-home">
+    <i id='next' class="fa-solid fa-angle-down"></i>
+    <i id="prev" class="fa-solid fa-angle-up"></i>
+    <a href="#home-chaser"><i class="fa-solid fa-angles-up"></i></a>
+    <a href="#final-chaser"><i class="fa-solid fa-phone-flip"></i></a>
+  </div>
+  <main>
+    <section id="home" class="main-box">
+      <div id="tit">
+        <h2>PORTFÓLIO</h2>
+        <h3>FULL-STACK DEV</h3>
+      </div>
+      <div id="home-img">
+        <a id="prof-pic"> <img
             src="https://media-exp1.licdn.com/dms/image/C5603AQFVstFCeQEUEw/profile-displayphoto-shrink_200_200/0/1641246407192?e=1651104000&v=beta&t=KWOdu01fUaq9MZrZoBSIH-pUfV1tNOoGXo0GtKi9YLU"
-            width="150px"
-            alt="FaelCapoarli's linkedin profile picture"
-          />
-          <nav id="shortcut-logos">
-            <a href="https://github.com/FaelCaporali" target="_blank"
-              ><img
-                src="./imagens/logos/github-seeklogo.com.svg"
-                alt="github logo"
-                id="github-logo"
-            /></a>
-            <a
-              href="https://www.linkedin.com/in/rafael-caporali-293045191/"
-              target="_blank"
-              ><img
-                src="./imagens/logos/linkedin-icon-seeklogo.com.svg"
-                alt="linkedin logo"
-                id="linkedin-logo"
-            /></a>
-          </nav>
+            alt="FaelCapoarli's linkedin profile picture" /> </a>
+        <div id="home-logos"> <a href="https://github.com/FaelCaporali" target="_blank"><img
+              src="./imagens/logos/github-seeklogo.com.svg" alt="github logo" id="github-logo" /></a>
+          <a href="https://www.linkedin.com/in/rafael-caporali-293045191/" target="_blank"><img
+              src="./imagens/logos/linkedin-icon-seeklogo.com.svg" alt="linkedin logo" id="linkedin-logo" /></a>
         </div>
-        <div id="saiba-mais">
-          <a id="know-more" href="#greetings-chaser" class="btt"
-            >Saiba mais <i class="fa-solid fa-angle-down"></i
-          ></a>
-        </div>
+      </div>
+      <div id="saiba-mais"> <a id="know-more" href="#greetings-chaser" class="btt">Saiba mais <i
+            class="fa-solid fa-angle-down"></i></a>
+      </div>
+    </section>
+    <section class="main-box greetings">
+      <h2>BEM VIND@!</h2>
+      <section>
+        <p>
+          Olá! Que feliz que você chegou ao meu portfólio! A idéia aqui é
+          construir um portfólio acadêmico e dinâmico, onde você possa me
+          conhecer melhor e acompanhar meus trabalhos durante a formação na
+          Trybe.<br />
+          É um portfólio vivo e não convencional, portanto não se assuste se
+          encontrar funcionalidades ou design quebrados, a página estará
+          pronta ao final do curso!
+        </p>
       </section>
+      <div class="last-arrow">
+        <a href="#port-chaser">
+          <i class="fa-solid fa-angle-down"></i>
+        </a>
+      </div>
+    </section>
+    <section class="main-box greetings">
+      <h2>COMO FUNCIONA?</h2>
+      <section>
+        <p>
+          Para apresentar um portfólio de um DEV-FullStack, você não acha
+          que a melhor forma é navegando?<br />
+          E como ser direto, criativo, bonito e funcional e ainda mostrar
+          como fui aprendendo em uma página? Bom, eu acredito que em uma só,
+          não tem como...
+        </p>
+        <p>
+          Então minha idéia aqui é desenvolver um portfólio modular com 3
+          áreas, cada uma sendo adicionada ao desenvolver do curso e
+          contendo as informações de um portfólio.
+        </p>
+      </section>
+      <div class="last-arrow">
+        <a href="#area-one-chaser">
+          <i class="fa-solid fa-angle-down"></i>
+        </a>
+      </div>
+    </section>
+    <section class="main-box area">
+      <h2>INSTITUCIONAL</h2>
+      <h3>Formação Acadêmica e Experiência Profissional</h3>
+      <section>
+        <p>
+          Se você busca informações profissionais diretas e apresentadas de
+          uma forma tradicional, é aqui que você deve procurar!
+        </p>
+        <p>
+          Meu Currículo, um pouco dos trabalhos e projetos que fiz, por onde
+          andei estudando e etc..<br />
+          Te encontro lá quando estiver pronta!
+          <i class="fa-solid fa-person-through-window"></i>
+        </p>
+        <p>
+          Essa área já já, vai para o ar!
+          <i class="fa-solid fa-face-grin-beam-sweat"></i>
+        </p>
+      </section>
+      <div class="last-arrow">
+        <a href="#area-two-chaser">
+          <i class="fa-solid fa-angle-down"></i>
+        </a>
+      </div>
+    </section>
+    <section class="main-box area">
+      <h2>TECH AREA</h2>
+      <h3>Tecnologias e Hard-Skills</h3>
+      <section>
+        <p>
+          Agora se você quer saber melhor sobre minhas capacidades como DEV,
+          está tudo aqui.<br />
+          <i class="non-btt fa-solid fa-code"></i>
+        </p>
+        <p>
+          Uma área voltada à ferramentas, tecnologias e funcionalidades em
+          uma aplicação prática!
+        </p>
+        <p>
+          Enquanto a página não vai ao ar, você pode acompanhar meu
+          desenvolvimento através deste e outros códigos fonte na minha
+          página do GitHub! o link tá bem aqui na barra preta, ó:
+          <i class="fa-solid fa-arrow-turn-down"></i>
+        </p>
+      </section>
+      <div class="last-arrow">
+        <a href="#area-three-chaser">
+          <i class="fa-solid fa-angle-down"></i>
+        </a>
+      </div>
+    </section>
+    <section class="main-box area">
+      <h2>NAVEGANDO POR AÍ</h2>
+      <h3>Soft-Skills, Valores e Experiência de Vida</h3>
+      <section>
+        <p>
+          Para quem viu tudo até aqui, quero agradecer e contar um pouco
+          mais de mim em uma abordagem mais moderna e interativa.<br>
+          <i class="fa-solid fa-spray-can"></i>
+        </p>
+        <p>
+          Essa é uma área mais ousada e a idéia é ter maior espaço
+          para criatividade enquanto mostro meus valores e história. Mas se quer me conhecer um pouco mais enquanto esta
+          área não está pronta,
+          pode me procurar!
+        </p>
+      </section>
+      <div class="last-arrow">
+        <a href="#final-chaser">
+          <i class="fa-solid fa-angle-down"></i>
+        </a>
+      </div>
+    </section>
+    <section class="main-box contato">
+      <section>
+        <p>Chega de Readme, você já entendeu que eu sou mais um DEV! <br><i
+            class="fa-solid fa-book-open-reader"></i><br>
+          Você pode agora navegar nas áreas que estão prontas aqui:<br>
+          <i class="fa-solid fa-sailboat"></i></i>
+        </p>
+      </section>
+      <div>
+        <a href="#area-one-chaser" class="btt">Página Institucional</a>
+        <a href="#area-two-chaser" class="btt">Tech Área</a>
+        <a href="#area-three-chaser" class="btt">Navegando Por Aí</a>
+      </div>
+      <section>
+        <p>Ou se preferir, pode entrar contato!<br>
+          <i class="fa-solid fa-square-phone-flip"></i> <i
+            class="fa-solid fa-envelope-circle-check"></i>
+        </p>
+        <p>rafaelhon@gmail.com</p>
+        <p>(31) 9.9196-2016</p>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <div class="stickers">
+      <div class="contact linkedin">
+        <a href="https://www.linkedin.com/in/rafael-caporali-293045191/" target="_blank"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <i class="fa-solid"></i>
+        <span class="hidden footer-spans">Linkedin</span>
+      </div>
+      <div class="contact gmail">
+        <a href="mailto:rafaelhon@gmail.com" subject="Sobre seu portfólio..." target="_blank"><i class="fa-solid fa-envelope-open"></i></a>
+        <i class="fa-solid"></i>
+        <span class="hidden footer-spans">Email</span>
+      </div>
+      <div class="contact whatsapp">
+        <a href="https://wa.me/5531991962016" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <i class="fa-solid"></i>
+        <span class="hidden footer-spans">WhatsApp</span>
+      </div>
+      <div class="contact github">
+        <a href="https://github.com/FaelCaporali" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <i class="fa-solid"></i>
+        <span class="hidden footer-spans">GitHub</span>
+      </div>
+    </div>
+    <hr>
+    <div id="feedbackid" class="feedback">
+      <h4>Deixe um feedback! <i class="fa-solid fa-angle-up"></i></h4>
+      <form class="hidden">
+        <textarea
+          placeholder="Infelizmente, essa ainda é uma funcionalidade que logo mais estará disponível. Se você sentiu vontade de mandar um feedback, por favor, envie! Só que pelo email alí"
+          rows="17" cols="22"></textarea>
+        <button></button>
+      </form>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/4570fe17fe.js" crossorigin="anonymous"></script>
+  <script text="text/javascript" src="./script.js"></script>
+</body>
 
-      <section id="wellcome-abord">
-        <ul>
-          <li class="master-box">
-            <h2>Bem vind@!</h2>
-            <p>
-              Olá! Que feliz que você chegou ao meu portfólio! A idéia aqui é
-              construir um portfólio acadêmico e dinâmico, onde você possa me
-              conhecer melhor e acompanhar meus trabalhos durante a formação na
-              Trybe.<br />
-              É um portfólio vivo e não convencional, portanto não se assuste se
-              encontrar funcionalidades ou design quebrados, a página estará
-              pronta ao final do curso!
-            </p>
-            <a href="#port-chaser">
-              <h2><i class="fa-solid fa-angle-down"></i></h2>
-            </a>
-          </li>
-          <li class="master-box">
-            <h2 class="sm-hidden">Como funciona?</h2>
-            <p>
-              Para apresentar um portfólio de um DEV-FullStack, você não acha
-              que a melhor forma é navegando?<br />
-              E como ser direto, criativo, bonito e funcional e ainda mostrar
-              como fui aprendendo em uma página? Bom, eu acredito que em uma só,
-              não tem como...
-            </p>
-            <p>
-              Então minha idéia aqui é desenvolver um portfólio modular com 3
-              áreas, cada uma sendo adicionada ao desenvolver do curso e
-              contendo as informações de um portfólio.
-            </p>
-            <a href="#area-one-chaser">
-              <h2><i class="fa-solid fa-angle-down"></i></h2>
-            </a>
-          </li>
-          <li class="master-box">
-            <h2 class="sm-hidden">Área 1</h2>
-            <h3>Formação Acadêmica e Experiência Profissional</h3>
-            <p>
-              Se você busca informações profissionais diretas e apresentadas de
-              uma forma tradicional, é aqui que você deve procurar!
-            </p>
-            <p>
-              Meu Currículo, um pouco dos trabalhos e projetos que fiz, por onde
-              andei estudando e etc..<br />
-              Te encontro lá quando estiver pronta!
-              <i class="non-btt fa-solid fa-person-through-window"></i>
-            </p>
-            <p>
-              Essa área já já, vai para o ar!
-              <i class="fa-solid fa-face-grin-beam-sweat"></i>
-            </p>
-            <a href="#area-two-chaser">
-              <h2><i class="fa-solid fa-angle-down"></i></h2>
-            </a>
-          </li>
-          <li class="master-box">
-            <h2 class="sm-hidden">Área 2</h2>
-            <h3>Tech area e Hard-Skills</h3>
-            <p>
-              Agora se você quer saber melhor sobre minhas capacidades como DEV,
-              está tudo aqui.<br />
-              <i class="non-btt fa-solid fa-code"></i>
-            </p>
-            <p>
-              Uma área voltada à ferramentas, tecnologias e funcionalidades em
-              uma aplicação prática!
-            </p>
-            <p>
-              Enquanto a página não vai ao ar, você pode acompanhar meu
-              desenvolvimento através deste e outros códigos fonte na minha
-              página do GitHub! o link tá bem aqui na barra preta, ó:
-              <i class="fa-solid fa-arrow-turn-down"></i>
-            </p>
-            <a href="#area-three-chaser">
-              <h2><i class="fa-solid fa-angle-down"></i></h2>
-            </a>
-          </li>
-          <li class="master-box">
-            <h2 class="sm-hidden">Área 3</h2>
-            <h3>
-              Soft-Skills, Valores e Experiência de Vida
-            </h3>
-            <p>
-              Para quem viu tudo até aqui, quero agradecer e contar um pouco
-              mais de mim em uma abordagem mais moderna e interativa.<br>
-              <i class="fa-solid fa-spray-can"></i>
-            </p>
-            <p>
-              Essa é uma área mais ousada e a idéia é ter maior espaço
-              para criatividade enquanto mostro meus valores e história. Mas se quer me conhecer um pouco mais enquanto esta área não está pronta,
-              pode me procurar!
-            </p>
-
-            <a href="#final-chaser">
-              <h2><i class="fa-solid fa-angle-down"></i></h2>
-            </a>
-          </li>
-        </ul>
-        <section id="selecoes" class="master-box">
-          <div id="guia">
-            <p>Chega de Readme, você já entendeu que eu sou mais um DEV! <br><i class="non-btt fa-solid fa-book-open-reader"></i><br>
-              Você pode agora navegar nas áreas que estão prontas aqui:<br>
-              <i class="non-btt fa-solid fa-sailboat"></i></i></p>
-            <div id="external">
-              <a class="btt" href="#area-one-chaser">Página Institucional</a>
-              <a class="btt" href="#area-two-chaser">Tech Área</a>
-              <a class="btt" href="#area-three-chaser">Navegando Por Aí</a>
-              <!--<a href="#home-chaser">HOME <i class="fa-solid fa-angle-up"></i></a>-->
-            </div>
-          </div>
-          <div id="contatos-maiores">
-            <p>Ou se preferir, pode entrar contato!<br>
-            <i class="non-btt fa-solid fa-square-phone-flip"></i> <i class="non-btt fa-solid fa-envelope-circle-check"></i>
-            </p>  
-            <p>rafaelhon@gmail.com</p>
-              <p>(31) 9.9196-2016</p>
-            </ul> 
-          </div>
-        </section>
-      </section>
-    </main>
-    <footer>
-      <section id="contatos">
-
-        <div id="barra-linkendin" class="contact hidden-cont linkedin">
-          <a
-              href="https://www.linkedin.com/in/rafael-caporali-293045191/"
-              target="_blank"
-              ><i class="fa-brands fa-linkedin"></i></a>
-          <i class="fa-solid"></i>
-          <span class="hidden footer-spans">Linkedin</span>
-        </div>
-        <div id="barra-gmail" class="contact hidden-cont gmail">
-          <a href="mailto:rafaelhon@gmail.com" subject="Sobre seu portfólio..." target="_blank"><img
-            src="./imagens/logos/kisspng-computer-icons-gmail-scalable-vector-graphics-emai-gmail-size-icon-5ab1a5580ffdb7.2247625415215916400655.png"
-            id="gmail-ico"
-          /></a>
-          <i class="fa-solid"></i>
-          <span class="hidden footer-spans">Email</span>
-        </div>
-        <div id="barra-whatsapp" class="contact hidden-cont whatsapp">
-          <a href="https://wa.me/5531991962016" target="_blank"
-              ><i class="fa-brands fa-whatsapp"></i></a>
-          <i class="fa-solid"></i>
-          <span class="hidden footer-spans">WhatsApp</span>
-        </div>
-        <div id="barra-github" class="contact hidden-cont github">
-          <a href="https://github.com/FaelCaporali" target="_blank"
-              ><i class="fa-brands fa-github"></i></a>
-          <i class="fa-solid"></i>
-          <span class="hidden footer-spans">GitHub</span>
-        </div>
-      </section>
-      <hr />
-      <section id="feedback" class="feedback">
-        <h6>Deixe um feedback! <i class="fa-solid fa-angle-up"></i></h6>
-        <div id="barra-modal" class="hidden">
-          <form>
-            <textarea placeholder="Infelizmente, essa ainda é uma funcionalidade que logo mais estará disponível. Se você sentiu vontade de mandar um feedback, por favor, envie! Só que pelo email alí" rows="17" cols="22"></textarea>
-            <button></button>
-          </form>
-        </div>
-      </section>
-    </footer>
-    <script
-      src="https://kit.fontawesome.com/4570fe17fe.js"
-      crossorigin="anonymous"
-    ></script>
-    <script text="text/javascript" src="./script.js"></script>
-  </body>
 </html>
