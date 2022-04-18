@@ -217,6 +217,7 @@
 
   #sticky-home i:hover {
     color:#04BF8A;
+    cursor: pointer;
   }
 
   .hidden {
@@ -461,6 +462,7 @@
     border-radius: 20px 20px 0 0;
     justify-content: flex-start;
     padding: 3vh;
+    margin-right: 1.5rem;
   }
 
   form {

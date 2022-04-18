@@ -106,7 +106,7 @@ window.onload = () => {
   };
 
   const scroller = (event) => {
-    event.target.id === 'next' ? window.scrollBy(0, window.innerHeight) : window.scrollBy(window.innerHeight, 0);
+    event.target.id === 'next' ? window.scrollBy(0, window.innerHeight) : window.scrollBy(0, window.innerHeight * -1);
   }
   document.getElementById('next').addEventListener('click', scroller);
   document.getElementById('prev').addEventListener('click', scroller);
