@@ -97,7 +97,37 @@
     transition: 0.5s;
   }
 
-  .bar1,
+  .bar1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bar1-1, .bar1-2 {
+    width: 1.9vh;
+    height: 0.6vh;
+    background-color: #F2B33D;
+    transition: 0.4s;
+  }
+
+  .sanduiche:hover .bar1-1 {
+    transform: rotate(45deg) translate(0.15rem, -0.15rem);
+    transition: 0.4s;
+  }
+
+  .sanduiche:hover .bar1-2 {
+    transform: rotate(-45deg) translate(-0.15rem, -0.15rem);
+    transition: 0.4s;
+
+  }
+
+  .bar1-1 {
+    border-radius: 40px 0 0 40px;
+  }
+
+  .bar1-2 {
+    border-radius: 0 40px 40px 0;
+  }
+
   .bar2,
   .bar3 {
     width: 3.8vh;
@@ -107,12 +137,12 @@
     transition: 0.4s;
   }
 
-  .sanduiche:hover .bar1,
+  .sanduiche:hover .bar1-1,
+  .sanduiche:hover .bar1-2,
   .sanduiche:hover .bar2,
   .sanduiche:hover .bar3 {
     background-color: #04d9d9;
   }
-
     /* cod w3 schools com algumas alterações */
   
   /* .change .bar1 {
