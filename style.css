@@ -107,25 +107,36 @@
     height: 0.6vh;
     background-color: #F2B33D;
     transition: 0.4s;
+    position: absolute;
   }
 
   .sanduiche:hover .bar1-1 {
-    transform: rotate(45deg) translate(0.15rem, -0.15rem);
+    transform: rotate(45deg) translate(0.25vh, -0.25vh);
     transition: 0.4s;
   }
 
   .sanduiche:hover .bar1-2 {
-    transform: rotate(-45deg) translate(-0.15rem, -0.15rem);
+    transform: rotate(-45deg) translate(-0.25vh, -0.25vh);
     transition: 0.4s;
 
   }
 
   .bar1-1 {
     border-radius: 40px 0 0 40px;
+    margin: -1.6vh 1.9vh 0.6vh auto;
+    animation-duration: 2s;
+    animation-name: clickMenuBar11;
+    animation-play-state: paused;
+    animation-timing-function: ease-in-out;
   }
 
   .bar1-2 {
     border-radius: 0 40px 40px 0;
+    margin: -1.6vh auto 0.6vh 1.9vh;
+    animation-duration: 2s;
+    animation-name: clickMenuBar12;
+    animation-play-state: paused;
+    animation-timing-function: ease-in-out;
   }
 
   .bar2,
@@ -135,7 +146,134 @@
     background-color: #F2B33D;
     border-radius: 40px;
     transition: 0.4s;
+    position: absolute;
   }
+
+  .bar2 {
+    animation-name: clickMenuBar2;
+    animation-play-state: paused;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+  }
+
+  .bar3 {
+    animation-name: clickMenuBar3;
+    animation-play-state: paused;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    margin-top: 2.3vh;
+  }
+
+  @keyframes clickMenuBar11 {
+    25% {
+      transform: translate(0, 0.6vh);
+    }
+    49% {
+      background-color: inherit;
+    }
+    50% {
+      transform: translate(0, 1.6vh);
+    }
+    100% {
+      background-color: inherit;
+    }
+}
+
+  @keyframes clickMenuBar12 {
+  25% {
+    transform: translate(0, 0.6vh);
+  }
+  49% {
+    background-color: inherit;
+  }
+  50% {
+    transform: translate(0, 1.6vh);
+  }
+  100% {
+    background-color: inherit;
+  }
+}
+
+@keyframes clickMenuBar2 {
+  25% {
+    transform: rotate(0deg);
+  }
+  49% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  55% {
+    transform: rotate(15deg);
+  }
+  60% {
+    transform: rotate(30deg);
+  }
+  65% {
+    transform: rotate(45deg);
+  }
+  70% {
+    transform: rotate(60deg);
+  }
+  75% {
+    transform: rotate(75deg);
+  }
+  80% {
+    transform: rotate(90deg);
+  }
+  85% {
+    transform: rotate(105deg);
+  }
+  90% {
+    transform: rotate(120deg);
+  }
+  95% {
+    transform: rotate(135deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes clickMenuBar3 {
+  25% {
+    transform: translate(0, -0.6vh);
+  }
+  50% {
+    transform: translate(0, -1.2vh);
+  }
+  55% {
+    transform: translate(0, -1.2vh) rotate(-15deg);
+  }
+  60% {
+    transform: translate(0, -1.2vh) rotate(-30deg);
+  }
+  65% {
+    transform: translate(0, -1.2vh) rotate(-45deg);
+  }
+  70% {
+    transform: translate(0, -1.2vh) rotate(-60deg);
+  }
+  75% {
+    transform: translate(0, -1.2vh) rotate(-75deg);
+  }
+  80% {
+    transform: translate(0, -1.2vh) rotate(-90deg);
+  }
+  85% {
+    transform: translate(0, -1.2vh) rotate(-105deg);
+  }
+  90% {
+    transform: translate(0, -1.2vh) rotate(-120deg);
+  }
+  95% {
+    transform: translate(0, -1.2vh) rotate(-135deg);
+  }
+  100% {
+    transform: translate(0, -1.2vh) rotate(-135deg);
+  }
+}
 
   .sanduiche:hover .bar1-1,
   .sanduiche:hover .bar1-2,
@@ -143,21 +281,6 @@
   .sanduiche:hover .bar3 {
     background-color: #04d9d9;
   }
-    /* cod w3 schools com algumas alterações */
-  
-  /* .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-2vw, 1vh);
-    transform: rotate(-45deg) translate(-2vw, 1vh);
-  }
-
-  .change .bar2 {
-    opacity: 0;
-  }
-
-  .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-2vw, -1.2vh);
-    transform: rotate(45deg) translate(-2vw, -1.2vh);
-  } */
 
   .opened-box {
     position: absolute;

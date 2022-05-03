@@ -1,113 +1,159 @@
-window.onload = () => {
-  const funcionalidadesTela = () => {
-    const titulo = document.getElementById("nome");
-    if (window.innerWidth < 319) {
-      alert("Use um dispositivo maior!");
-    }
-    if (window.innerWidth > 375) {
-      window.alert(
-        "Para uma melhor experiência, por enquanto navegue em dispositivos com telas pequenas. Este é um portfólio dinâmico e em construção, não se assuste se alguma funcionalidade estiver quebrada. =]"
-      );
-    }
-    if (window.innerWidth < 550) {
-      titulo.innerText = "Fael Caporali";
-    } else if (window.innerWidth > 549) {
-      titulo.innerText = "Rafael Honório Caporali de Freitas";
-    }
-  };
-  //cabeçalho
-  const menuSand = () => {
-    const cBox = document.getElementById("myMenu").classList;
-    const cBttCont = document.getElementById("menu-superior").classList;
-    if (cBox.contains("hidden-box")) {
-      cBox.remove("hidden-box");
-      cBox.add("opened-box");
-      cBttCont.remove("hidden");
-    } else {
-      cBox.remove("opened-box");
-      cBox.add("hidden-box");
-      cBttCont.add("hidden");
-    }
-  };
-
-  // funcionalidades primeiro frame
-  const changeIconKnowMore = (event) => {
-    const ico = document.querySelector("#know-more i");
-    if (event.type === "mouseenter") {
-      ico.classList.remove("fa-angle-down");
-      ico.classList.add("fa-angles-down");
-    } else {
-      ico.classList.remove("fa-angles-down");
-      ico.classList.add("fa-angle-down");
-    }
-  };
-
-  // funcionalidades roda-pé
-  const displayStickerContent = (event) => {
-    const ico = event.target.children[1];
-    const text = event.target.children[2]
-    if (event.type === 'mouseleave') {
-      ico.classList.remove('fa-arrow-down');
-      text.classList.add('hidden');
-    } else {
-      ico.classList.add('fa-arrow-down');
-      text.classList.remove('hidden');
-    }
-  };
-  
-  const setStickersListeners = () => {
-    document.querySelectorAll('.contact').forEach(e => e.addEventListener('mouseenter', displayStickerContent));
-    document.querySelectorAll('.contact').forEach(e => e.addEventListener('mouseleave', displayStickerContent));
+const funcionalidadesTela = () => {
+  const titulo = document.getElementById("nome");
+  if (window.innerWidth < 319) {
+    alert("Use um dispositivo maior!");
+  } else if (window.innerWidth > 375) {
+    window.alert(
+      "Para uma melhor experiência, navegue em dispositivos com telas menores. Este é um portfólio em construção, não se assuste se alguma funcionalidade estiver quebrada. =]"
+    );
   }
-  
-  const changeIconFeedback = (event) => {
-    const ico = document.querySelector('.feedback i');
-    const box = document.getElementById('feedbackid');
-    const arrowUp = () => {
-      if (event.type === 'mouseenter') {
-        ico.classList.remove('fa-angle-up');
-        ico.classList.add('fa-angles-up')
-      } else {
-        ico.classList.remove('fa-angles-up');
-        ico.classList.add('fa-angle-up');
-      }
-    }
-    const arrowsDown = () => {
-      if (event.type === 'mouseenter') {
-        ico.classList.remove('fa-angle-down');
-        ico.classList.add('fa-angles-down')
-      } else {
-        ico.classList.remove('fa-angles-down');
-        ico.classList.add('fa-angle-down');
-      }
-    }
-    return box.classList.contains('feedback-up') ? arrowsDown() : arrowUp();
-  };
-
-  const openfeedback = () => {
-    const popUpFeedback = document.getElementById('feedbackid');
-    const ico = document.querySelector("#feedbackid i");
-    const feedText = document.querySelector('#feedbackid form');
-    const opening = () => {
-      ico.classList.remove("fa-angle-up");
-      ico.classList.remove("fa-angles-up");
-      ico.classList.add("fa-angle-down");
-      popUpFeedback.classList.add("feedback-up");
-      feedText.classList.remove("hidden");
-    }      
-    const closing = () => {
-      popUpFeedback.classList.remove("feedback-up");
-      feedText.classList.add("hidden");
-      ico.classList.remove("fa-angle-down");
-      ico.classList.remove("fa-angles-down");
-      ico.classList.add("fa-angle-up");
-    }
-    return feedText.classList.contains("hidden") ? opening() : closing();
-  };
-
-  const scroller = (event) => {
-    event.target.id === 'next' ? window.scrollBy(0, window.innerHeight) : window.scrollBy(0, window.innerHeight * -1);
+  if (window.innerWidth < 550) {
+    titulo.innerText = "Fael Caporali";
+  } else if (window.innerWidth > 549) {
+    titulo.innerText = "Rafael Honório Caporali de Freitas";
   }
+};
+//cabeçalho
+const menuSand = () => {
+  const cBox = document.getElementById("myMenu").classList;
+  const cBttCont = document.getElementById("menu-superior").classList;
+  if (cBox.contains("hidden-box")) {
+    cBox.remove("hidden-box");
+    cBox.add("opened-box");
+    cBttCont.remove("hidden");
+  } else {
+    cBox.remove("opened-box");
+    cBox.add("hidden-box");
+    cBttCont.add("hidden");
+  }
+};
+
+// funcionalidades primeiro frame
+const changeIconKnowMore = (event) => {
+  const ico = document.querySelector("#know-more i");
+  if (event.type === "mouseenter") {
+    ico.classList.remove("fa-angle-down");
+    ico.classList.add("fa-angles-down");
+  } else {
+    ico.classList.remove("fa-angles-down");
+    ico.classList.add("fa-angle-down");
+  }
+};
+
+// funcionalidades roda-pé
+const displayStickerContent = (event) => {
+  const ico = event.target.children[1];
+  const text = event.target.children[2]
+  if (event.type === 'mouseleave') {
+    ico.classList.remove('fa-arrow-down');
+    text.classList.add('hidden');
+  } else {
+    ico.classList.add('fa-arrow-down');
+    text.classList.remove('hidden');
+  }
+};
+
+const setStickersListeners = () => {
+  document.querySelectorAll('.contact').forEach(e => e.addEventListener('mouseenter', displayStickerContent));
+  document.querySelectorAll('.contact').forEach(e => e.addEventListener('mouseleave', displayStickerContent));
+}
+
+const changeIconFeedback = (event) => {
+  const ico = document.querySelector('.feedback i');
+  const box = document.getElementById('feedbackid');
+  const arrowUp = () => {
+    if (event.type === 'mouseenter') {
+      ico.classList.remove('fa-angle-up');
+      ico.classList.add('fa-angles-up')
+    } else {
+      ico.classList.remove('fa-angles-up');
+      ico.classList.add('fa-angle-up');
+    }
+  }
+  const arrowsDown = () => {
+    if (event.type === 'mouseenter') {
+      ico.classList.remove('fa-angle-down');
+      ico.classList.add('fa-angles-down')
+    } else {
+      ico.classList.remove('fa-angles-down');
+      ico.classList.add('fa-angle-down');
+    }
+  }
+  return box.classList.contains('feedback-up') ? arrowsDown() : arrowUp();
+};
+
+const openfeedback = () => {
+  const popUpFeedback = document.getElementById('feedbackid');
+  const ico = document.querySelector("#feedbackid i");
+  const feedText = document.querySelector('#feedbackid form');
+  const opening = () => {
+    ico.classList.remove("fa-angle-up");
+    ico.classList.remove("fa-angles-up");
+    ico.classList.add("fa-angle-down");
+    popUpFeedback.classList.add("feedback-up");
+    feedText.classList.remove("hidden");
+  }      
+  const closing = () => {
+    popUpFeedback.classList.remove("feedback-up");
+    feedText.classList.add("hidden");
+    ico.classList.remove("fa-angle-down");
+    ico.classList.remove("fa-angles-down");
+    ico.classList.add("fa-angle-up");
+  }
+  return feedText.classList.contains("hidden") ? opening() : closing();
+};
+
+const scroller = (event) => {
+  event.target.id === 'next' ? window.scrollBy(0, window.innerHeight) : window.scrollBy(0, window.innerHeight * -1);
+}
+
+const animation = () => {
+  const bar11 = document.querySelector('.bar1-1');
+  const bar12 = document.querySelector('.bar1-2');
+  const bar2 = document.querySelector('.bar2');
+  const bar3 = document.querySelector('.bar3');
+  bar11.style.animationName = 'none';
+  bar12.style.animationName = 'none';
+  bar2.style.animationName = 'none';
+  bar3.style.animationName = 'none';
+  const reload = () => {
+    bar11.style.animationName = 'clickMenuBar11';
+    bar12.style.animationName = 'clickMenuBar12';
+    bar2.style.animationName = 'clickMenuBar2';
+    bar3.style.animationName = 'clickMenuBar3';
+    resetAnimation();
+    bar11.style.animationPlayState = 'running';
+    bar12.style.animationPlayState = 'running';
+    bar2.style.animationPlayState = 'running';
+    bar3.style.animationPlayState = 'running';
+    bar11.style.animationFillMode = 'forwards';
+    bar12.style.animationFillMode = 'forwards';
+    bar2.style.animationFillMode = 'forwards';
+    bar3.style.animationFillMode = 'forwards';
+  };
+  setTimeout(reload, 10);
+};
+const resetAnimation = () => {
+  const bar11 = document.querySelector('.bar1-1');
+  const bar12 = document.querySelector('.bar1-2');
+  const bar2 = document.querySelector('.bar2');
+  const bar3 = document.querySelector('.bar3');
+  if (bar11.style.animationDirection === 'reverse' || bar11.style.animationDirection === '') {
+    bar11.style.animationDirection = 'normal';
+    bar12.style.animationDirection = 'normal';
+    bar2.style.animationDirection = 'normal';
+    bar3.style.animationDirection = 'normal';
+  } else {
+    bar11.style.animationDirection = 'reverse';
+    bar12.style.animationDirection = 'reverse';
+    bar2.style.animationDirection = 'reverse';
+    bar3.style.animationDirection = 'reverse';
+  }
+};
+
+window.onload = () => {  
+  
+  document.querySelector('.sanduiche').addEventListener('click', animation);
   document.getElementById('next').addEventListener('click', scroller);
   document.getElementById('prev').addEventListener('click', scroller);
 
