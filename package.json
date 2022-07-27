@@ -2,7 +2,7 @@
   "name": "portfoliofaelcaporali",
   "version": "1.0.0",
   "description": "Portfólio pessoal de um dev fullStack",
-  "main": "script.js",
+  "main": "./area1/index.html",
   "scripts": {
     "test": "test"
   },

@@ -5,8 +5,21 @@
   text-decoration: none;
   color: unset;
   scroll-behavior:smooth;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  scroll-snap-type: y mandatory;
+}
+
+.main-box {
+  scroll-snap-align: center;
+}
+
 
 @media (min-width: 320px) {
   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
@@ -384,6 +397,7 @@
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
+    scroll-snap-type: mandatory x;
   }
 
   #home {
