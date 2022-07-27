@@ -1,0 +1,35 @@
+{
+  "name": "portfoliofaelcaporali",
+  "version": "1.0.0",
+  "description": "Portfólio pessoal de um dev fullStack",
+  "main": "script.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FaelCaporali/FaelCaporali.github.io.git"
+  },
+  "keywords": [
+    "dev",
+    "fullstack",
+    "portfolio",
+    "trybe",
+    "vanilla",
+    "react",
+    "node",
+    "express",
+    "css",
+    "html5",
+    "es6"
+  ],
+  "author": "Fael Caporali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FaelCaporali/FaelCaporali.github.io/issues"
+  },
+  "homepage": "https://github.com/FaelCaporali/FaelCaporali.github.io#readme",
+  "dependencies": {
+    "eslint": "^8.20.0"
+  }
+}
