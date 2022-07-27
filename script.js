@@ -82,27 +82,6 @@ const changeIconFeedback = (event) => {
   return box.classList.contains("feedback-up") ? arrowsDown() : arrowUp();
 };
 
-const openfeedback = () => {
-  const popUpFeedback = document.getElementById("feedbackid");
-  const ico = document.querySelector("#feedbackid i");
-  const feedText = document.querySelector("#feedbackid form");
-  const opening = () => {
-    ico.classList.remove("fa-angle-up");
-    ico.classList.remove("fa-angles-up");
-    ico.classList.add("fa-angle-down");
-    popUpFeedback.classList.add("feedback-up");
-    feedText.classList.remove("hidden");
-  };
-  const closing = () => {
-    popUpFeedback.classList.remove("feedback-up");
-    feedText.classList.add("hidden");
-    ico.classList.remove("fa-angle-down");
-    ico.classList.remove("fa-angles-down");
-    ico.classList.add("fa-angle-up");
-  };
-  return feedText.classList.contains("hidden") ? opening() : closing();
-};
-
 const scroller = (event) => {
   event.target.id === "next" ? scrollDown() : scrollUp();
 };
@@ -223,4 +202,5 @@ window.onload = () => {
   document
     .querySelector("#feedbackid h4")
     .addEventListener("click", openfeedback);
+  document.body.requestFullscreen();
 };
